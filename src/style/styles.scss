@@ -1,0 +1,37 @@
+.circular-stepper-container{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    background-color: transparent;
+    align-items: center;
+    .circular-stepper{
+        .circle-background {
+            stroke: #D3D3D3;
+            fill: none;
+        }
+          
+        .circle-progress {
+            stroke: #FFA500;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transition: 0.6s;
+            fill: none;
+        }
+        .circle-text {
+            font-size: 1.2em;
+            font-weight: bold;
+            
+        }
+    }
+
+    .circular-stepper-text {
+        margin-left: 20px;
+        h3{
+            margin: 0;
+        }
+        span {
+            margin-top: 10px;
+        }
+    }
+}
+

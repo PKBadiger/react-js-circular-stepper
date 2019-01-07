@@ -1,0 +1,36 @@
+.circular-stepper-demo-wrapper {
+    width: 360px;
+    height: 600;
+    border: 5px solid grey;
+    border-radius: 20px;
+    position: relative;
+    .demo-container-header {
+        margin: 10px;
+    }
+    .demo-container-body{
+        padding: 10px;
+    }
+
+    .demo-container-footer {
+        hr{
+            width: 90%;
+            float: left;
+        }
+        position: absolute;
+        bottom: 0;
+        margin: 10px;
+        width: 100%;
+        .next{
+            float: right;
+            margin-right: 35px;
+        }
+    }
+}
+
+.main-container{
+    margin: 10px;
+    padding: 10px;
+    .radio-button{
+        margin-bottom: 20px;
+    }
+}
