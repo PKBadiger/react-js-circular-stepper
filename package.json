@@ -2,10 +2,15 @@
   "name": "react-js-circular-stepper",
   "version": "1.0.0",
   "description": "React circualar stepper for both mobile and web application",
-  "main": "index.js",
+  "main": "publish/circular_stepper.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development"
+    "start": "webpack-dev-server --mode development",
+    "transpile": "babel src -d publish --copy-files",
+    "prepublishOnly": "npm run transpile",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist",
+    "publish-demo": "npm run build && npm run deploy"
   },
   "repository": {
     "type": "git",
@@ -17,6 +22,10 @@
     "url": "https://github.com/PKBadiger/react-js-circular-stepper/issues"
   },
   "homepage": "https://github.com/PKBadiger/react-js-circular-stepper#readme",
+  "peerDependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
